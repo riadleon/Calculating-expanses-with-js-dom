@@ -94,21 +94,22 @@
 
                 <div>
                     <label>Per Player </label>
-                    <input type="text" name="firstname"><br>
+                    <input id="per-player-field" type="text" name="player"><br>
                 </div>
                 <br>
-                <button class="btn btn-primary btn-lg btn-block" type="submit"> Calculate</button>
+                <button id="btn-per-player" class="btn btn-primary btn-lg btn-block" type="submit"> Calculate</button>
 
                 <div>
-                    <label>Player Expanses : $5000 </label>
+                    <label>Player Expanses : $<span id="expanse-field">0</span> </label>
                     <br>
                     <label>Manager </label>
-                    <input type="text" name="Manager"><br>
+                    <input id="manager-field" type="text" name="Manager"><br>
                     <br>
                     <label>Coach </label>
-                    <input type="text" name="Coach"><br>
+                    <input id="coach-field" type="text" name="Coach"><br>
                     <br><br>
-                    <button class="btn btn-primary btn-lg btn-block" type="submit"> Calculate</button>
+                    <button id="btn-total-calc" class="btn btn-primary btn-lg btn-block" type="submit">
+                        Calculate</button>
                 </div>
                 <br><br>
                 <div class="row">
@@ -116,16 +117,21 @@
                         Total
                     </div>
                     <div class="col-md-2">
-                        $11000
-                    </div>
+                        $<span id="total-amount">00</span></div>
                 </div>
 
+            </div>
+        </div>
+        <div class="row text-white text-center">
+            <div class="col-md-12">
+                Thank you
             </div>
         </div>
     </div>
 
 
     <script src="js/card.js"></script>
+    <script src="js/budget.js"></script>
 </body>
 
 </html>
